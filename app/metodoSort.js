@@ -1,7 +1,7 @@
-let btnOrdernarPorPreco = document.getElementById("btnOrdenarPorPreco")
-btnOrdernarPorPreco.addEventListener("click", ordernarLivrosPorPreco )
+let btnOrdenarPorPreco = document.getElementById('btnOrdenarPorPreco')
+btnOrdenarPorPreco.addEventListener('click', ordenarLivrosPorPreco)
 
-function ordernarLivrosPorPreco() {
-    let livrosOrdenados = livros.sort((a,b) => a.preco - b.preco) 
+function ordenarLivrosPorPreco() {
+    let livrosOrdenados = livros.sort((a, b) => a.preco - b.preco)
     exibirOsLivrosNaTela(livrosOrdenados)
 }
