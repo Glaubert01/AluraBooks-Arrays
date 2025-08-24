@@ -7,6 +7,4 @@ async function getBuscarLivrosDaAPI() {
     livros = await res.json()
     livros = aplicarDesconto(livros)
     exibirOsLivrosNaTela(livrosComDesconto)
-
-    console.table(livrosComDesconto)
 }
